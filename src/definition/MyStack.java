@@ -28,7 +28,19 @@ public class MyStack<E> implements AdtStack<E> {
 
     @Override
     public E pop() {
-        return null;
+        E reponse=null;
+
+        Node<E> temp=top;
+
+        if(temp!=null){
+            reponse=temp.getData ();
+
+            top=top.getNext ();
+
+            size--;
+        }
+
+        return reponse;
     }
 
     @Override
