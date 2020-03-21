@@ -6,4 +6,6 @@ public interface AdtStack<E> {
 
     E pop();
 
+    boolean isEmpty();
+
 }
