@@ -25,6 +25,7 @@ public class MyStack<E> implements AdtStack<E> {
 
     private static class Node<E>{
         private E data;
+        private Node<E> next;
 
     }
 }
