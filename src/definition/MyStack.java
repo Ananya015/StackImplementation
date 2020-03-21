@@ -38,6 +38,8 @@ public class MyStack<E> implements AdtStack<E> {
 
     @Override
     public void push(E item) {
+        top= new Node<> ( item ,top );
+        size++;
 
     }
 
