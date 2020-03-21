@@ -8,4 +8,6 @@ public interface AdtStack<E> {
 
     boolean isEmpty();
 
+    void push(E item);
+
 }
