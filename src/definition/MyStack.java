@@ -22,4 +22,8 @@ public class MyStack<E> implements AdtStack<E> {
     public void push(E item) {
 
     }
+
+    private static class Node{
+
+    }
 }
