@@ -11,6 +11,7 @@ public class MyStack<E> implements AdtStack<E> {
 
     @Override
     public E peek() {
+
         return null;
     }
 
@@ -21,7 +22,7 @@ public class MyStack<E> implements AdtStack<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size==0;
     }
 
     @Override
