@@ -2,6 +2,8 @@ package definition;
 
 import adt.AdtStack;
 
+import java.util.NoSuchElementException;
+
 public class MyStack<E> implements AdtStack<E> {
 
     private Node<E> top = null;
@@ -11,8 +13,17 @@ public class MyStack<E> implements AdtStack<E> {
 
     @Override
     public E peek() {
+        E reponse=null;
 
-        return null;
+        if(this.isEmpty ()){
+            throw new NoSuchElementException ("Stack underFlow!!!");
+        }
+        else{
+            Node<E> topNode=top;
+            reponse=topNode.getData ();
+        }
+
+        return reponse;
     }
 
     @Override
