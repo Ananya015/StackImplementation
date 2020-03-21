@@ -4,7 +4,9 @@ import adt.AdtStack;
 
 public class MyStack<E> implements AdtStack<E> {
 
-    private Node<E> top=null;
+    private Node<E> top = null;
+
+    private int size = 0;
 
 
     @Override
