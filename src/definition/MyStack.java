@@ -3,6 +3,10 @@ package definition;
 import adt.AdtStack;
 
 public class MyStack<E> implements AdtStack<E> {
+
+    private Node<E> top;
+
+
     @Override
     public E peek() {
         return null;
