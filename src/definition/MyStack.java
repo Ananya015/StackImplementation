@@ -23,7 +23,7 @@ public class MyStack<E> implements AdtStack<E> {
 
     }
 
-    private static class Node{
+    private static class Node<E>{
 
     }
 }
